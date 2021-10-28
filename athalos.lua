@@ -1002,25 +1002,6 @@ else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("✧ عذرا هذا الامر لكشف الروبوت وليس لك .")..'&show_alert=true')
 end 
 end
-if DataText and DataText:match(tonumber(data.sender_user_id_)..'dl:id/(.*)') then
-local Url = DataText:match(tonumber(data.sender_user_id_)..'dl:id/(.*)')
-https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("✧ جار تحميل النتائج يرجى الانتظار .. .")..'&show_alert=true')
-DeleteMessage(Chat_Id2,{[0] = MsgId2})
-https.request('https://api-athalos.ml/David/athalosYt.php?Put=Photo&TokenBot='..TokenBot..'&ChatId='..Chat_Id2..'&MsgId='..Msg_Id2..'&UserId='..data.sender_user_id_..'&Url='..Url..'&Name='..DirName)
-elseif DataText and DataText:match(tonumber(data.sender_user_id_)..'dl:vi/(.*)') then
-local Url = DataText:match(tonumber(data.sender_user_id_)..'dl:vi/(.*)')
-https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("✧ جار تحميل النتائج يرجى الانتظار .. .")..'&show_alert=true')
-https.request('https://api-athalos.ml/David/athalosYt.php?Put=Video&TokenBot='..TokenBot..'&ChatId='..Chat_Id2..'&MsgId='..Msg_Id2..'&Url='..Url..'&Name='..DirName)
-elseif DataText and DataText:match(tonumber(data.sender_user_id_)..'dl:au/(.*)') then
-local Url = DataText:match(tonumber(data.sender_user_id_)..'dl:au/(.*)')
-https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("✧ جار تحميل النتائج يرجى الانتظار .. .")..'&show_alert=true')
-https.request('https://api-athalos.ml/David/athalosYt.php?Put=Audio&TokenBot='..TokenBot..'&ChatId='..Chat_Id2..'&MsgId='..Msg_Id2..'&Url='..Url..'&Name='..DirName)
-elseif DataText and DataText:match(tonumber(data.sender_user_id_)..'dl:vo/(.*)') then
-local Url = DataText:match(tonumber(data.sender_user_id_)..'dl:vo/(.*)')
-https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("✧ جار تحميل النتائج يرجى الانتظار .. .")..'&show_alert=true')
-DeleteMessage(Chat_Id2,{[0] = MsgId2})
-https.request('https://api-athalos.ml/David/athalosYt.php?Put=Voice&TokenBot='..TokenBot..'&ChatId='..Chat_Id2..'&MsgId='..Msg_Id2..'&Url='..Url..'&Name='..DirName)
-end
 if DataText and DataText:match('/DelRed:'..tonumber(data.sender_user_id_)..'(.*)') then
 local SOFI = DataText:match('/DelRed:'..tonumber(data.sender_user_id_)..'(.*)')
 EditMsg(Chat_Id2, Msg_Id2, "✧ : الكلمه ↫ "..SOFI.." تم حذفها") 
@@ -1895,8 +1876,7 @@ if text == '↫ الاوامر الخدميه ✧' or text == '/play' or text ==
 local Sudo_Welcome = '✧ : اهلا بك مجددا عزيزي \n✧ : اليك الازرار الخاصه بالاوامر الخدميه الخاصه بسورس اثالوس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'↫ اوامر التسليه ✧','↫ الاوامر الخدميه  ✧'},
-{'↫ اوامر النسب ✧','↫ البوتات ✧'},
-{'↫ العاب ✧'},
+{'↫ اوامر النسب ✧','↫ العاب ✧'},
 {'↫  السورس ✧','↫  المطور ✧'},
 {'↫ رجوع ✧'},
 }
@@ -1923,17 +1903,6 @@ local key = {
 {'↫ الحمايه ✧'},
 {'↫  معرفي ✧','↫  اسمي ✧','↫ ايديي ✧'},
 {'↫  نبذتي ✧','↫ نبذا ✧'},
-{'↫  رجوع  ✧'},
-}
-SendInline(msg.chat_id_,Sudo_Welcome,key)
-return false
-end
-if text == '↫ البوتات ✧' then 
-local Sudo_Welcome = '✧ : اهلا بك مجددا عزيزي \n✧ : اليك الازرار الخاصه بأوامر البوتات الخاصه بسورس اثالوس فقط اضغط على الامر الذي تريد تنفيذه'
-local key = {
-{'↫ بوت الحذف ✧','↫ بوت الهمسه ✧'},
-{'↫ بوت اليوتيوب ✧','↫ بوت الكت ✧'},
-{'↫ بوت الزخرفه ✧'},
 {'↫  رجوع  ✧'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
@@ -2106,12 +2075,7 @@ if text == "الزخرفه" or text == "↫ الزخرفه ✧" then  Dev_SOFI(m
 if text == "معاني الاسماء" or text == "↫ معاني الاسماء ✧" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ :  من خلال البوت يمكنك معرفه معنى اسمك \n✧ :  فقط قم بارسال امر معنى اسم + الاسم \n✧ :  مثال : معنى اسم ريو', 1, 'md') end
 if text == "عدد المسح" or text == "تعين عدد المسح" or text == "تعيين عدد المسح" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ :  فقط قم بارسال امر عدد المسح + عدد المسح \n✧ :  مثال : عدد المسح 100', 1, 'md') end
 if text == "انطق" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ :  فقط قم بارسال امر انطق + الكلمه\n✧ : سيقوم البوت بنطق الكلمه \n✧ :  مثال : انطق هلو', 1, 'md') end
-if text == "يوتيوب" and ChCheck(msg) or text == "اليوتيوب" and ChCheck(msg) or text == "↫ بوت اليوتيوب ✧" and ChCheck(msg) or text == "بوت اليوتيوب" and ChCheck(msg) or text == "اريد بوت يوتيوب" and ChCheck(msg) or text == "شمرلي بوت يوتيوب" and ChCheck(msg) or text == "يوت" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/t_stbot"}}} SendInline(msg.chat_id_,'*✧ : اضغط للحصول على بوت اليوتيوب*',nil,inline) return false end
-if text == "اهمس" and ChCheck(msg) or text == "↫ بوت الهمسه ✧" and ChCheck(msg) or text == "بوت الهمسه" and ChCheck(msg) or text == "همسه" and ChCheck(msg) or text == "اريد بوت الهمسه" and ChCheck(msg) or text == "دزلي بوت الهمسه" and ChCheck(msg) or text == "دزولي بوت الهمسه" and ChCheck(msg) then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : @HMSEBOT\n✧ : @nnbbot\n✧ : @ocBot\n✧ : @hebot ', 1, 'md') end
 if text == "رابط حذف" and ChCheck(msg) or text == "رابط الحذف" and ChCheck(msg) or text == "اريد رابط الحذف" and ChCheck(msg) or text == "شمرلي رابط الحذف" and ChCheck(msg) or text == "اريد رابط حذف" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'*✧ : اضغط للحصول على رابط الحذف*',nil,inline) return false end
-if text == "↫ بوت الحذف ✧" and ChCheck(msg) or text == "بوت الحذف" and ChCheck(msg) or text == "اريد بوت الحذف" and ChCheck(msg) or text == "اريد بوت حذف" and ChCheck(msg) or text == "بوت حذف" and ChCheck(msg) or text == "بوت حذف حسابات" and ChCheck(msg) or text == "راح احذف" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'*✧ : اضغط للحصول على بوت الحذف*',nil,inline) return false end
-if text == "↫ بوت الكت ✧" and ChCheck(msg) or text == "بوت الكت" and ChCheck(msg) or text == "بوت كت" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/E9OBot"}}} SendInline(msg.chat_id_,'*✧ : اضغط للحصول على بوت الكت*',nil,inline) return false end
-if text == "↫ بوت الزخرفه ✧" and ChCheck(msg) or text == "بوت الزخرفه" and ChCheck(msg) or text == "بوت زخرفه" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/W5555Bot"}}} SendInline(msg.chat_id_,'*✧ : اضغط للحصول على بوت الزخرفه*',nil,inline) return false end
 if text == "ايديي" and ChCheck(msg) or text == "↫ ايديي ✧" and ChCheck(msg) then Dev_SOFI(msg.chat_id_, msg.id_, 1,'✧ : ايديك ↫ ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
 -- Source athalos --
 if text == 'نبذا' and ChCheck(msg) or text == '↫ نبذا ✧' then
@@ -11243,17 +11207,12 @@ SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, athalosTeam, 14, string.le
 DevSOFI:set(athalos.."SOFI:WhyTube"..msg.chat_id_,true) 
 return false  
 end 
-if text and text:match('^بحث (.*)$') and not DevSOFI:get(athalos.."SOFI:WhyTube"..msg.chat_id_) then            
-local Text = text:match('^بحث (.*)$') 
-local msg_id = msg.id_/2097152/0.5 
-https.request('https://api-athalos.ml/David/athalosYt.php?Put=Search&TokenBot='..TokenBot..'&ChatId='..msg.chat_id_..'&UserId='..msg.sender_user_id_..'&Text='..URL.escape(Text)..'&MsgId='..msg_id..'&Name='..DirName)
-end
 --     Source athalos     --
 if SecondSudo(msg) then
 if text == "تحديث السورس" and ChCheck(msg) or text == "تحديث سورس" and ChCheck(msg) or text == "↫ تحديث السورس ✧" and ChCheck(msg) then 
 Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : جاري تحديث سورس اثالوس', 1, 'md') 
 os.execute('rm -rf athalos.lua') 
-os.execute('wget https://raw.githubusercontent.com/athalosTeam8/David/master/athalos.lua') 
+os.execute('wget https://raw.githubusercontent.com/SRC-LoRdShiP/athalos/main/athalos.lua') 
 dofile('athalos.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
