@@ -212,25 +212,25 @@ if len == nil then len = '*l' end
 local line, err = client.network.socket:receive(len)
 if not err then return line else
 print("\27[36m"..[[                                           
----------------------------------------------
-|    ____             ____                  |
-|   |  _ \  _____   _|  _ \ _ __ _____  __  |
-|   | | | |/ _ \ \ / / |_) | '__/ _ \ \/ /  |
-|   | |_| |  __/\ V /|  __/| | | (_) >  <   |
-|   |____/ \___| \_/ |_|   |_|  \___/_/\_\  |
+---------------------------------------------                                        
+|   ____  ____      _    ____  ___  _   _   |
+|  |  _ \|  _ \    / \  / ___|/ _ \| \ | |  |
+|  | | | | |_) |  / _ \| |  _| | | |  \| |  |  
+|  | |_| |  _ <  / ___ \ |_| | |_| | |\  |  |
+|  |____/|_| \_\/_/   \_\____|\___/|_| \_|  |
 |-------------------------------------------|
-|This Source Was Developed By (ABS) @IQ_ABS.|
-|  This Is The Source Channel @Dev_Prox .   |
-|               - DevProx -                 |
+|This Source Was Developed By (SOFI) @s00f4.|
+|   This Is The Source Channel @S0DRG .     |
+|                - Dragon -                 |
 ---------------------------------------------
 ]]..'\27[m')
 Config = dofile("config.lua")
-DevId = Config.DevId
+DraGoN = Config.DraGoN
 TokenBot = Config.TokenBot
-if DevId then
+if DraGoN then
 https = require("ssl.https")
-URL = require("./libs/url.lua")  
-https.request('https://api.telegram.org/bot'..TokenBot..'/sendMessage?chat_id='..DevId..'&text='..URL.escape("⌁︙لقد توقف البوت بسبب انهاير الريدز في السيرفر افتح الترمنال وارسل ↫ ⤈\n`service redis start` ")..'&parse_mode=Markdown')
+URL = require("./athalos/libs/url.lua")  
+https.request('https://api.telegram.org/bot'..TokenBot..'/sendMessage?chat_id='..DraGoN..'&text='..URL.escape("℘︙لقد توقف البوت بسبب انهاير الريدز في السيرفر افتح الترمنال وارسل ↫ ⤈\n`service redis start` ")..'&parse_mode=Markdown')
 end
 os.exit()
 end
