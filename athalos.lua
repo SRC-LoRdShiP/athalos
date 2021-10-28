@@ -28,7 +28,7 @@ if tostring(DraGoN):match('%d+') then
 io.write('\27[1;36mتم حفظ ايدي المطور الاساسي\n27[0;39;49m') 
 DevSOFI:set(Server.."Idathalos",DraGoN) 
 else 
-print('\27[1;31m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\nلم يتم حفظ ايدي المطور الاساسي ارسله مره اخرى\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉') 
+print('\27[1;31m✧⚍⚍⚍⚍⚍⚍⚍✧\nلم يتم حفظ ايدي المطور الاساسي ارسله مره اخرى\n✧⚍⚍⚍⚍⚍⚍⚍✧') 
 end
 os.execute('lua athalos.lua') 
 end
@@ -38,13 +38,13 @@ local TokenBot = io.read()
 if TokenBot ~= '' then 
 local url , res = https.request('https://api.telegram.org/bot'..TokenBot..'/getMe') 
 if res ~= 200 then 
-print('\27[1;31m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\nالتوكن غير صحيح تاكد منه ثم ارسله\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉') 
+print('\27[1;31m✧⚍⚍⚍⚍⚍⚍⚍✧\nالتوكن غير صحيح تاكد منه ثم ارسله\n✧⚍⚍⚍⚍⚍⚍⚍✧') 
 else 
 io.write('\27[1;36mتم حفظ توكن البوت بنجاح\n27[0;39;49m') 
 DevSOFI:set(Server.."Tokenathalos",TokenBot) 
 end  
 else 
-print('\27[1;31m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\nلم يتم حفظ توكن البوت ارسله مره اخرى\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉') 
+print('\27[1;31m✧⚍⚍⚍⚍⚍⚍⚍✧\nلم يتم حفظ توكن البوت ارسله مره اخرى\n✧⚍⚍⚍⚍⚍⚍⚍✧') 
 end  
 os.execute('lua athalos.lua') 
 end
@@ -75,15 +75,15 @@ token="]]..DevSOFI:get(Server.."Tokenathalos")..[["
 while(true) do
 rm -fr ../.telegram-cli
 if [ ! -f ./tg ]; then
-echo "┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉"
+echo "✧⚍⚍⚍⚍⚍⚍⚍✧ ✧⚍⚍⚍⚍⚍⚍⚍✧ ┉ ┉ ┉ ┉ ┉"
 echo "~ The tg File Was Not Found In The Bot Files!"
-echo "┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉"
+echo "✧⚍⚍⚍⚍⚍⚍⚍✧ ✧⚍⚍⚍⚍⚍⚍⚍✧ ┉ ┉ ┉ ┉ ┉"
 exit 1
 fi
 if [ ! $token ]; then
-echo "┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉"
+echo "✧⚍⚍⚍⚍⚍⚍⚍✧ ✧⚍⚍⚍⚍⚍⚍⚍✧"
 echo "~ The Token Was Not Found In The config.lua File!"
-echo "┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉"
+echo "✧⚍⚍⚍⚍⚍⚍⚍✧ ✧⚍⚍⚍⚍⚍⚍⚍✧"
 exit 1
 fi
 ./tg -s ./athalos.lua -p PROFILE --bot=$token
@@ -126,7 +126,7 @@ print("\27[36m"..[[
 | (_| | |_| | | | (_| | | (_) \__ \
  \__,_|\__|_| |_|\__,_|_|\___/|___/
                                    
-]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m")
+]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m✧⚍⚍⚍⚍⚍⚍⚍✧ ┉ ┉ ┉ ┉\27[m")
 Config = dofile("./config.lua")
 DraGoN = Config.DraGoN
 SudoIds = {Config.SudoIds,1960726343,1422853527,119541395}
@@ -134,7 +134,7 @@ athalos = Config.athalos
 TokenBot = Config.TokenBot
 NameBot = (DevSOFI:get(athalos..'SOFI:NameBot') or 'اثالوس')
 --     Source athalos     --
-FilesPrint = "\27[35m".."\nAll Source Files Started ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"..'\27[m'
+FilesPrint = "\27[35m".."\nAll Source Files Started ↬ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧ ┉ ┉ ┉ ┉\n"..'\27[m'
 FilesNumber = 0
 for v in io.popen('ls Files'):lines() do
 if v:match(".lua$") then
@@ -142,7 +142,7 @@ FilesNumber = FilesNumber + 1
 FilesPrint = FilesPrint.."\27[39m"..FilesNumber.."\27[36m".."~ : \27[10;32m"..v.."\27[m \n"
 end
 end
-FilesPrint = FilesPrint.."\27[35m".."┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n".."\27[m"
+FilesPrint = FilesPrint.."\27[35m".."✧⚍⚍⚍⚍⚍⚍⚍✧ ┉ ┉ ┉ ┉\n".."\27[m"
 if FilesNumber ~= 0 then
 print(FilesPrint)
 end
@@ -750,7 +750,7 @@ if GetInfo.result.can_invite_users == true then INV = '✔️' else INV = '✖�
 if GetInfo.result.can_pin_messages == true then PIN = '✔️' else PIN = '✖️' end
 if GetInfo.result.can_restrict_members == true then BAN = '✔️' else BAN = '✖️' end
 if GetInfo.result.can_promote_members == true then VIP = '✔️' else VIP = '✖️' end 
-send(msg.chat_id_,msg.id_,'✧ : صلاحيات '..GetCustomTitle(user_id,msg.chat_id_)..' هي ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : حذف الرسائل ↫ '..DEL..'\n✧ : دعوة المستخدمين ↫ '..INV..'\n✧ : حظر المستخدمين ↫ '..BAN..'\n✧ : تثبيت الرسائل ↫ '..PIN..'\n✧ : تغيير المعلومات ↫ '..EDT..'\n✧ : اضافة مشرفين ↫ '..VIP..'\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉')
+send(msg.chat_id_,msg.id_,'✧ : صلاحيات '..GetCustomTitle(user_id,msg.chat_id_)..' هي ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : حذف الرسائل ↫ '..DEL..'\n✧ : دعوة المستخدمين ↫ '..INV..'\n✧ : حظر المستخدمين ↫ '..BAN..'\n✧ : تثبيت الرسائل ↫ '..PIN..'\n✧ : تغيير المعلومات ↫ '..EDT..'\n✧ : اضافة مشرفين ↫ '..VIP..'\n✧⚍⚍⚍⚍⚍⚍⚍✧')
 end
 end
 end
@@ -983,8 +983,8 @@ EditMsg(Chat_Id2, Msg_Id2, "✧ : تم الغاء اللعبه لاعادة ال
 end
 if DataText == '/ListRolet' then
 local List = DevSOFI:smembers(athalos..'SOFI:ListRolet'..data.chat_id_) 
-local Text = '✧ : قائمة الاعبين ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n' 
-local Textt = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : تم اكتمال العدد الكلي هل انت مستعد ؟'
+local Text = '✧ : قائمة الاعبين ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n' 
+local Textt = '✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : تم اكتمال العدد الكلي هل انت مستعد ؟'
 for k, v in pairs(List) do 
 Text = Text..k.."~ : [" ..v.."]\n"  
 end 
@@ -1063,14 +1063,14 @@ if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 local Help = DevSOFI:get(athalos..'SOFI:Help')
 local Text = [[
 ✧ : اهلا بك في قائمة الاوامر ↫ ⤈ 
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : م1 ↫ اوامر الحمايه
 ✧ : م2 ↫ اوامر الادمنيه
 ✧ : م3 ↫ اوامر المدراء
 ✧ : م4 ↫ اوامر المنشئين
 ✧ : م5 ↫ اوامر المطورين
 ✧ : م6 ↫ اوامر الاعضاء
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]] 
 keyboard = {} 
@@ -1089,7 +1089,7 @@ end
 local Help = DevSOFI:get(athalos..'SOFI:Help1')
 local Text = [[
 ✧ : اوامر حماية المجموعه ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : قفل • فتح ↫ الروابط
 ✧ : قفل • فتح ↫ المعرفات
 ✧ : قفل • فتح ↫ البوتات
@@ -1122,9 +1122,9 @@ local Text = [[
 ✧ : قفل • فتح ↫ الانكليزيه
 ✧ : قفل • فتح ↫ الفارسيه
 ✧ : قفل • فتح ↫ التفليش
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : اوامر حمايه اخرى ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : قفل • فتح + الامر ↫ ⤈
 ✧ : التكرار بالطرد
 ✧ : التكرار بالكتم
@@ -1132,7 +1132,7 @@ local Text = [[
 ✧ : الفارسيه بالطرد
 ✧ : البوتات بالطرد
 ✧ : البوتات بالتقيد
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 keyboard = {} 
@@ -1151,7 +1151,7 @@ end
 local Help = DevSOFI:get(athalos..'SOFI:Help2')
 local Text = [[
 ✧ : اوامر الادمنيه ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : الاعدادت
 ✧ : تاك للكل 
 ✧ : انشاء رابط
@@ -1169,25 +1169,25 @@ local Text = [[
 ✧ : ضع • حذف ↫ قوانين
 ✧ : اضف • حذف ↫ صلاحيه
 ✧ : الصلاحيات • حذف الصلاحيات
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : ضع سبام + العدد
 ✧ : ضع تكرار + العدد
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : رفع مميز • تنزيل مميز
 ✧ : المميزين • حذف المميزين
 ✧ : كشف القيود • رفع القيود
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : حذف • مسح + بالرد
 ✧ : منع • الغاء منع
 ✧ : قائمه المنع
 ✧ : حذف قائمه المنع
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تفعيل • تعطيل ↫ الرابط
 ✧ : تفعيل • تعطيل ↫ الالعاب
 ✧ : تفعيل • تعطيل ↫ الترحيب
 ✧ : تفعيل • تعطيل ↫ التاك للكل
 ✧ : تفعيل • تعطيل ↫ كشف الاعدادات
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : طرد المحذوفين
 ✧ : طرد ↫ بالرد • بالمعرف • بالايدي
 ✧ : كتم • الغاء كتم
@@ -1196,12 +1196,12 @@ local Text = [[
 ✧ : المكتومين • حذف المكتومين
 ✧ : المقيدين • حذف المقيدين
 ✧ : المحظورين • حذف المحظورين
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تقييد دقيقه + عدد الدقائق
 ✧ : تقييد ساعه + عدد الساعات
 ✧ : تقييد يوم + عدد الايام
 ✧ : الغاء تقييد ↫ لالغاء التقييد بالوقت
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 keyboard = {} 
@@ -1220,7 +1220,7 @@ end
 local Help = DevSOFI:get(athalos..'SOFI:Help3')
 local Text = [[
 ✧ : اوامر المدراء ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : فحص البوت
 ✧ : ضع اسم + الاسم
 ✧ : اضف • حذف ↫ رد
@@ -1234,33 +1234,33 @@ local Text = [[
 ✧ : منع ↫ بالرد على ( ملصق • صوره • متحركه )
 ✧ : حذف قائمه منع + ↫ ⤈
 ( الصور • المتحركات • الملصقات )
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تنزيل الكل
 ✧ : رفع ادمن • تنزيل ادمن
 ✧ : الادمنيه • حذف الادمنيه
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تثبيت
 ✧ : الغاء التثبيت
 ✧ : اعاده التثبيت
 ✧ : الغاء تثبيت الكل
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تغير رد + اسم الرتبه + النص ↫ ⤈
 ✧ : المطور • منشئ الاساسي
 ✧ : المنشئ • المدير • الادمن
 ✧ : المميز • المنظف • العضو
 ✧ : حذف ردود الرتب
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تغيير الايدي ↫ لتغيير الكليشه
 ✧ : تعيين الايدي ↫ لتعيين الكليشه
 ✧ : حذف الايدي ↫ لحذف الكليشه
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تفعيل • تعطيل + الامر ↫ ⤈
 ✧ : اطردني • الايدي بالصوره • الابراج
 ✧ : معاني الاسماء • اوامر النسب • انطق
 ✧ : الايدي • تحويل الصيغ • اوامر التحشيش
 ✧ : ردود المدير • ردود المطور • التحقق
 ✧ : ضافني • حساب العمر • الزخرفه
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 keyboard = {} 
@@ -1279,7 +1279,7 @@ end
 local Help = DevSOFI:get(athalos..'SOFI:Help4')
 local Text = [[
 ✧ : اوامر المنشئين ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تنزيل الكل
 ✧ : الميديا • امسح
 ✧ : تعين عدد الحذف
@@ -1296,9 +1296,9 @@ local Text = [[
 ✧ : تفعيل • تعطيل + الامر ↫ ⤈
 ✧ : نزلني • امسح
 ✧ : الحظر • الكتم
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : اوامر المنشئين الاساسيين ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : وضع لقب + اللقب
 ✧ : تفعيل • تعطيل ↫ الرفع
 ✧ : رفع منشئ • تنزيل منشئ
@@ -1306,14 +1306,14 @@ local Text = [[
 ✧ : رفع • تنزيل ↫ مشرف
 ✧ : رفع بكل الصلاحيات
 ✧ : حذف القوائم
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : اوامر المالكين ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : رفع • تنزيل ↫ منشئ اساسي
 ✧ : حذف المنشئين الاساسيين 
 ✧ : المنشئين الاساسيين 
 ✧ : حذف جميع الرتب
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 keyboard = {} 
@@ -1332,7 +1332,7 @@ end
 local Help = DevSOFI:get(athalos..'SOFI:Help5')
 local Text = [[
 ✧ : اوامر المطورين ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : الكروبات
 ✧ : المطورين
 ✧ : المشتركين
@@ -1343,16 +1343,16 @@ local Text = [[
 ✧ : كشف + -ايدي المجموعه
 ✧ : رفع مالك • تنزيل مالك
 ✧ : المالكين • حذف المالكين
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : رفع • تنزيل ↫ مدير عام
 ✧ : حذف • المدراء العامين 
 ✧ : رفع • تنزيل ↫ ادمن عام
 ✧ : حذف • الادمنيه العامين 
 ✧ : رفع • تنزيل ↫ مميز عام
 ✧ : حذف • المميزين عام 
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : اوامر المطور الاساسي ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تحديث
 ✧ : السيرفر
 ✧ : روابط الكروبات
@@ -1384,14 +1384,14 @@ local Text = [[
 ✧ : الثانويين • حذف الثانويين
 ✧ : تعيين • حذف ↫ كليشة الايدي
 ✧ : اذاعه للكل بالتوجيه ↫ بالرد
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تفعيل ملف + اسم الملف
 ✧ : تعطيل ملف + اسم الملف
 ✧ : تفعيل • تعطيل + الامر ↫ ⤈
 ✧ : الاذاعه • الاشتراك الاجباري
 ✧ : ترحيب البوت • المغادره
 ✧ : البوت الخدمي • التواصل
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 keyboard = {} 
@@ -1407,7 +1407,7 @@ if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 local Help = DevSOFI:get(athalos..'SOFI:Help6')
 local Text = [[
 ✧ : اوامر الاعضاء ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : السورس • موقعي • رتبتي • معلوماتي 
 ✧ : رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
 ✧ : ميمز • متحركه • صوره • ريمكس • فلم • مسلسل • انمي
@@ -1419,7 +1419,7 @@ local Text = [[
 ✧ : ايدي المجموعه • معلومات المجموعه 
 ✧ : نسبه الحب • نسبه الكره • نسبه الغباء 
 ✧ : نسبه الرجوله • نسبه الانوثه • التفاعل
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : لقبه + بالرد
 ✧ : كول + الكلمه
 ✧ : زخرفه + اسمك
@@ -1431,7 +1431,7 @@ local Text = [[
 ✧ : ايدي • كشف  ↫ بالرد • بالمعرف • بالايدي
 ✧ : تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
 ✧ : انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 keyboard = {} 
@@ -1485,7 +1485,7 @@ end
 if Constructor(msg) then
 if text == "الاوامر المضافه" and ChCheck(msg) then
 local List = DevSOFI:smembers(athalos.."List:Cmd:Group:New"..msg.chat_id_.."") 
-t = "✧ : قائمة الاوامر المضافه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+t = "✧ : قائمة الاوامر المضافه ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 Cmds = DevSOFI:get(athalos.."Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 if Cmds then 
@@ -1566,7 +1566,7 @@ if #List == 0 then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : لاتوجد صلاحيات مضافه", 1, 'html')
 return false
 end
-t = "✧ : قائمة الصلاحيات المضافه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+t = "✧ : قائمة الصلاحيات المضافه ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 var = DevSOFI:get(athalos.."Comd:New:rt:SOFI:"..v..msg.chat_id_)
 if var then
@@ -2282,7 +2282,7 @@ local NameChat = NameChat:gsub("*","")
 local NameChat = NameChat:gsub("{","") 
 local NameChat = NameChat:gsub("}","") 
 if not Sudo(msg) and not Bot(msg) then
-SendText(DraGoN,"✧ : تم طرد البوت من المجموعه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : بواسطة ↫ "..Name.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DraGoN,"✧ : تم طرد البوت من المجموعه ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : بواسطة ↫ "..Name.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end,nil)
 end,nil)
@@ -2383,7 +2383,7 @@ else
 LinkGroup = 'لا يوجد'
 end
 DevSOFI:set(athalos.."SOFI:Groups:Links"..msg.chat_id_,LinkGroup) 
-SendText(DraGoN,"✧ : تم تفعيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : بواسطة ↫ "..Name.."\n✧ : موقعه في المجموعه ↫ "..status.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✧ : رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DraGoN,"✧ : تم تفعيل مجموعه جديده ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : بواسطة ↫ "..Name.."\n✧ : موقعه في المجموعه ↫ "..status.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✧ : رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end end
 end,nil)
@@ -3010,7 +3010,7 @@ for i=0,#msg.content_.members_ do
 BotWelcome = msg.content_.members_[i].id_    
 if BotWelcome and BotWelcome == tonumber(athalos) then 
 if DevSOFI:sismember(athalos..'SOFI:Groups',msg.chat_id_) then BotText = "مفعله في السابق\n✧ : ارسل ↫ الاوامر واستمتع بالمميزيات" else BotText = "معطله يجب رفعي مشرف\n✧ : بعد ذلك يرجى ارسال امر ↫ تفعيل\n✧ : سيتم رفع الادمنيه والمنشئ تلقائيا" end 
-if DevSOFI:get(athalos.."SOFI:Text:BotWelcome") then SOFIText = DevSOFI:get(athalos.."SOFI:Text:BotWelcome") else SOFIText = "✧ : مرحبا انا بوت اسمي "..NameBot.."\n✧ : حالة المجموعه ↫ "..BotText.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉" end 
+if DevSOFI:get(athalos.."SOFI:Text:BotWelcome") then SOFIText = DevSOFI:get(athalos.."SOFI:Text:BotWelcome") else SOFIText = "✧ : مرحبا انا بوت اسمي "..NameBot.."\n✧ : حالة المجموعه ↫ "..BotText.."\n✧⚍⚍⚍⚍⚍⚍⚍✧" end 
 if DevSOFI:get(athalos.."SOFI:Photo:BotWelcome") then SOFIPhoto = DevSOFI:get(athalos.."SOFI:Photo:BotWelcome") elseif SOFI.photos_[0] then SOFIPhoto = SOFI.photos_[0].sizes_[1].photo_.persistent_id_ else SOFIPhoto = nil end 
 if SOFIPhoto ~= nil then
 sendPhoto(msg.chat_id_,msg.id_,0,1,nil,SOFIPhoto,SOFIText)
@@ -3628,7 +3628,7 @@ end
 if text == "الرابط" then
 if not DevSOFI:get(athalos..'SOFI:Lock:GpLinks'..msg.chat_id_) then 
 if DevSOFI:get(athalos.."SOFI:Groups:Links"..msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : Group Link ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"..DevSOFI:get(athalos.."SOFI:Groups:Links"..msg.chat_id_), 1, "html")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : Group Link ↬ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"..DevSOFI:get(athalos.."SOFI:Groups:Links"..msg.chat_id_), 1, "html")
 else 
 Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : لايوجد رابط ارسل ↫ ضع رابط او ارسل ↫ انشاء رابط للانشاء', 1, 'md')
 end
@@ -3641,11 +3641,11 @@ if not DevSOFI:get(athalos.."SOFI:Lock:GpLinksinline"..msg.chat_id_) then
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevSOFI:get(athalos.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local Text = '✧ : 𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..ta.title_..']('..linkgpp.result..')'
+local Text = '✧ : 𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n['..ta.title_..']('..linkgpp.result..')'
 keyboard = {}  
 keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/X6UX6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Tl_300&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else 
 end 
 end,nil) 
@@ -4279,7 +4279,7 @@ if text == 'خمن' and ChCheck(msg) or text == 'تخمين' and ChCheck(msg) or
 if not DevSOFI:get(athalos..'SOFI:Lock:Games'..msg.chat_id_) then
 Num = math.random(1,20)
 DevSOFI:set(athalos.."GAMES:NUM"..msg.chat_id_,Num) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'✧ : اهلا بك عزيزي في لعبة التخمين ↫ ⤈\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : سيتم تخمين عدد ما بين الـ1 والـ20 اذا تعتقد انك تستطيع الفوز جرب واللعب الان .\n✧ : ملاحظه لديك ثلاث محاولات فقط فكر قبل ارسال تخمينك !', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'✧ : اهلا بك عزيزي في لعبة التخمين ↫ ⤈\n ✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : سيتم تخمين عدد ما بين الـ1 والـ20 اذا تعتقد انك تستطيع الفوز جرب واللعب الان .\n✧ : ملاحظه لديك ثلاث محاولات فقط فكر قبل ارسال تخمينك !', 1, 'md')
 DevSOFI:setex(athalos.."GAME:TKMEN"..msg.chat_id_.."" .. msg.sender_user_id_, 100, true)  
 return false  
 end
@@ -4353,7 +4353,7 @@ if text == 'الالعاب' and ChCheck(msg) or text == 'العاب' and ChCheck
 if not DevSOFI:get(athalos..'SOFI:Lock:Games'..msg.chat_id_) then
 Dev_SOFI(msg.chat_id_, msg.id_, 1,[[
 ✧ : قائمة العاب المجموعه ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : لعبة التخمين ↫ خمن
 ✧ : لعبة الامثله ↫ امثله
 ✧ : لعبة العكس ↫ العكس
@@ -4368,9 +4368,9 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1,[[
 ✧ : لعبة المحيبس ↫ المحيبس
 ✧ : لعبة الرياضيات ↫ رياضيات
 ✧ : لعبة الانكليزيه ↫ انكليزيه
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : نقاطي • بيع نقاطي
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]], 1, 'md')
 else
@@ -4547,7 +4547,7 @@ keyboard.inline_keyboard = {
 {{text = '✧ Developer',url="t.me/GD_300"}}
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/X6UX6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Tl_300&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source athalos     --
@@ -4616,7 +4616,7 @@ if Admin(msg) then
 if text == "تاك للكل" and ChCheck(msg) then
 if not DevSOFI:get(athalos..'SOFI:Lock:TagAll'..msg.chat_id_) then
 function TagAll(dp1,dp2)
-local text = "✧ : وينكم يالربع \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+local text = "✧ : وينكم يالربع \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 i = 0
 for k, v in pairs(dp2.members_) do
 i = i + 1
@@ -4636,7 +4636,7 @@ if text and text:match("^كللهم (.*)$") and ChCheck(msg) then
 local txt = {string.match(text, "^(كللهم) (.*)$")}
 if not DevSOFI:get(athalos..'SOFI:Lock:TagAll'..msg.chat_id_) then
 function TagAll(dp1,dp2)
-local text = "✧ : "..txt[2].." \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+local text = "✧ : "..txt[2].." \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 i = 0
 for k, v in pairs(dp2.members_) do
 i = i + 1
@@ -6741,7 +6741,7 @@ end
 if Admin(msg) then
 if text == "المميزين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:VipMem:'..msg.chat_id_)
-text = "✧ : قائمة المميزين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المميزين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6759,7 +6759,7 @@ if Manager(msg) then
 if text == "الادمنيه" and ChCheck(msg) or text == "الادمنية" and ChCheck(msg) then 
 local SOFI =  'SOFI:Admins:'..msg.chat_id_
 local List = DevSOFI:smembers(athalos..SOFI)
-text = "✧ : قائمة الادمنيه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة الادمنيه ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6776,7 +6776,7 @@ end end
 if Constructor(msg) then
 if text == "المدراء" and ChCheck(msg) or text == "مدراء" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:Managers:'..msg.chat_id_)
-text = "✧ : قائمة المدراء ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المدراء ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6791,7 +6791,7 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 if text == "المنظفين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:Cleaner:'..msg.chat_id_)
-text = "✧ : قائمة المنظفين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المنظفين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6808,7 +6808,7 @@ end end
 if BasicConstructor(msg) then
 if text == "المنشئين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:Constructor:'..msg.chat_id_)
-text = "✧ : قائمة المنشئين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المنشئين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6825,7 +6825,7 @@ end end
 if Owner(msg) then
 if text == "المالكين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:Owner:'..msg.chat_id_)
-text = "✧ : قائمة المالكين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المالكين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6840,7 +6840,7 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 if text == "المنشئين الاساسيين" and ChCheck(msg) or text == "منشئين اساسيين" and ChCheck(msg) or text == "المنشئين الاساسين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:BasicConstructor:'..msg.chat_id_)
-text = "✧ : قائمة المنشئين الاساسيين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المنشئين الاساسيين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6876,7 +6876,7 @@ end
 if Admin(msg) then
 if text == "المكتومين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:Muted:'..msg.chat_id_)
-text = "✧ : قائمة المكتومين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المكتومين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6892,7 +6892,7 @@ end
 --     Source athalos     --
 if text == "المقيدين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:Tkeed:'..msg.chat_id_)
-text = "✧ : قائمة المقيدين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المقيدين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6908,7 +6908,7 @@ end
 --     Source athalos     --
 if text == "المحظورين" and ChCheck(msg) or text == "المحضورين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:Ban:'..msg.chat_id_)
-text = "✧ : قائمة المحظورين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المحظورين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6924,7 +6924,7 @@ end
 --     Source athalos     --
 if text == "المطايه" and ChCheck(msg) or text == "المطاية" and ChCheck(msg) then
 local List = DevSOFI:smembers(athalos..'User:Donky:'..msg.chat_id_)
-text = "✧ : قائمة مطاية المجموعه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة مطاية المجموعه ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6940,7 +6940,7 @@ end
 --     Source athalos     --
 if text == "قائمه المنع" and ChCheck(msg) then
 local List = DevSOFI:hkeys(athalos..'SOFI:Filters:'..msg.chat_id_)
-text = "✧ : قائمة المنع ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المنع ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k, v in pairs(List) do
 text = text..k..'~ ❨ '..v..' ❩\n'
 end
@@ -6953,7 +6953,7 @@ end
 --     Source athalos     --
 if text == "المطورين الاساسيين" and ChCheck(msg) and SOFISudo(msg) or text == "الاساسيين" and SOFISudo(msg) and ChCheck(msg) or text == "↫ الاساسيين ✧" and SOFISudo(msg) and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:SOFISudo:')
-text = "✧ : قائمة المطورين الاساسيين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المطورين الاساسيين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6969,7 +6969,7 @@ end
 --     Source athalos     --
 if text == "المطورين الثانويين" and SecondSudo(msg) and ChCheck(msg) or text == "الثانويين" and SecondSudo(msg) and ChCheck(msg) or text == "↫ الثانويين ✧" and SecondSudo(msg) and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:SecondSudo:')
-text = "✧ : قائمة المطورين الثانويين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المطورين الثانويين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -6988,7 +6988,7 @@ if text == "قائمه العام" and ChCheck(msg) or text == "المحظوري
 local BanAll = DevSOFI:smembers(athalos..'SOFI:BanAll:')
 local MuteAll = DevSOFI:smembers(athalos..'SOFI:MuteAll:')
 if #BanAll ~= 0 then 
-text = "✧ : قائمة المحظورين عام ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المحظورين عام ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(BanAll) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -7000,7 +7000,7 @@ else
 text = ""
 end
 if #MuteAll ~= 0 then 
-text = text.."✧ : قائمة المكتومين عام ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = text.."✧ : قائمة المكتومين عام ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(MuteAll) do
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
 if username then
@@ -7021,7 +7021,7 @@ end
 --     Source athalos     --
 if text == "المطورين" and ChCheck(msg) or text == "↫ المطورين ✧" and ChCheck(msg) then 
 local List = DevSOFI:smembers(athalos..'SOFI:SudoBot:')
-text = "✧ : قائمة المطورين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "✧ : قائمة المطورين ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local sudouser = DevSOFI:get(athalos..'SOFI:Sudos'..v) 
 local username = DevSOFI:get(athalos..'Save:UserName'..v)
@@ -7492,7 +7492,7 @@ end
 --     Source athalos     --
 if SecondSudo(msg) then
 if text and text:match("^تعيين الايدي العام$") or text and text:match("^تعين الايدي العام$") or text and text:match("^تعيين كليشة الايدي$") then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : رجائا اتبع التعليمات للتعيين \n✧ : لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : رجائا اتبع التعليمات للتعيين \n✧ : لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n✧⚍⚍⚍⚍⚍⚍⚍✧', 1, 'md')
 DevSOFI:set("athalos:New:id:"..athalos..msg.sender_user_id_,'athalosTeam')
 return "athalosTeam"
 end
@@ -7514,7 +7514,7 @@ end
 end
 --     Source athalos     --
 if text and text:match("^تعيين الايدي$") and ChCheck(msg) or text and text:match("^تعين الايدي$") and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : رجائا اتبع التعليمات للتعيين \n✧ : لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : رجائا اتبع التعليمات للتعيين \n✧ : لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n✧⚍⚍⚍⚍⚍⚍⚍✧', 1, 'md')
 DevSOFI:set("athalos:New:id:"..athalos..msg.chat_id_..msg.sender_user_id_,'athalosTeam')
 return "athalosTeam"
 end
@@ -7570,7 +7570,7 @@ newpicid = newpicid:gsub('#auto',(formsgs(msguser) or 'لا يوجد'))
 newpicid = newpicid:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 newpicid = newpicid:gsub('#Description',(Description or 'لا يوجد'))
 else
-newpicid = "✧ : "..Description.."\n✧ : معرفك ↫ ❨ "..username.." ❩\n✧ : ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n✧ : رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n✧ : رسائلك ↫ ❨ "..user_msgs.." ❩\n✧ : سحكاتك ↫ ❨ "..edit_msg.." ❩\n✧ : تفاعلك ↫ "..formsgs(msguser).."\n✧ : نقاطك ↫ ❨ "..user_nkt.." ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+newpicid = "✧ : "..Description.."\n✧ : معرفك ↫ ❨ "..username.." ❩\n✧ : ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n✧ : رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n✧ : رسائلك ↫ ❨ "..user_msgs.." ❩\n✧ : سحكاتك ↫ ❨ "..edit_msg.." ❩\n✧ : تفاعلك ↫ "..formsgs(msguser).."\n✧ : نقاطك ↫ ❨ "..user_nkt.." ❩\n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 end 
 if not DevSOFI:get(athalos.."SOFI:GpIds:Text"..msg.chat_id_) then 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, SOFI.photos_[0].sizes_[1].photo_.persistent_id_,newpicid,msg.id_,msg.id_.."")
@@ -7650,7 +7650,7 @@ notpicid = notpicid:gsub('#auto',(formsgs(msguser) or 'لا يوجد'))
 notpicid = notpicid:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 notpicid = notpicid:gsub('#Description',(Description or 'لا يوجد'))
 else
-notpicid = "✧ : لا استطيع عرض صورتك لانك قمت بحظر البوت او انك لاتمتلك صوره في بروفايلك\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : معرفك ↫ ❨ "..username.." ❩\n✧ : ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n✧ : رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n✧ : رسائلك ↫ ❨ "..user_msgs.." ❩\n✧ : سحكاتك ↫ ❨ "..edit_msg.." ❩\n✧ : تفاعلك ↫ "..formsgs(msguser).."\n✧ : نقاطك ↫ ❨ "..user_nkt.." ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+notpicid = "✧ : لا استطيع عرض صورتك لانك قمت بحظر البوت او انك لاتمتلك صوره في بروفايلك\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : معرفك ↫ ❨ "..username.." ❩\n✧ : ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n✧ : رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n✧ : رسائلك ↫ ❨ "..user_msgs.." ❩\n✧ : سحكاتك ↫ ❨ "..edit_msg.." ❩\n✧ : تفاعلك ↫ "..formsgs(msguser).."\n✧ : نقاطك ↫ ❨ "..user_nkt.." ❩\n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 end 
 if not DevSOFI:get(athalos..'SOFI:Lock:Id'..msg.chat_id_) then
 if not DevSOFI:get(athalos..'SOFI:Lock:Id:Photo'..msg.chat_id_) then
@@ -8713,7 +8713,7 @@ if GetInfo.result.can_invite_users == true then INV = '✔️' else INV = '✖�
 if GetInfo.result.can_pin_messages == true then PIN = '✔️' else PIN = '✖️' end
 if GetInfo.result.can_restrict_members == true then BAN = '✔️' else BAN = '✖️' end
 if GetInfo.result.can_promote_members == true then VIP = '✔️' else VIP = '✖️' end 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : صلاحيات البوت هي ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : حذف الرسائل ↫ '..DEL..'\n✧ : دعوة المستخدمين ↫ '..INV..'\n✧ : حظر المستخدمين ↫ '..BAN..'\n✧ : تثبيت الرسائل ↫ '..PIN..'\n✧ : تغيير المعلومات ↫ '..EDT..'\n✧ : اضافة مشرفين ↫ '..VIP..'\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : صلاحيات البوت هي ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : حذف الرسائل ↫ '..DEL..'\n✧ : دعوة المستخدمين ↫ '..INV..'\n✧ : حظر المستخدمين ↫ '..BAN..'\n✧ : تثبيت الرسائل ↫ '..PIN..'\n✧ : تغيير المعلومات ↫ '..EDT..'\n✧ : اضافة مشرفين ↫ '..VIP..'\n✧⚍⚍⚍⚍⚍⚍⚍✧', 1, 'md')
 end end
 if text and text:match("^تغير رد المطور (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد المطور (.*)$") 
@@ -8771,7 +8771,7 @@ end
 if text == "كشف البوتات" and ChCheck(msg) then 
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = '✧ : *قائمة البوتات* ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+text = '✧ : *قائمة البوتات* ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n'
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -8789,7 +8789,7 @@ if #admins == 0 then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : *لاتوجد بوتات هنا*", 1, 'md')
 return false end
 if #admins == i then 
-local a = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : *عدد البوتات هنا* ↫ '..n..'\n'
+local a = '✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : *عدد البوتات هنا* ↫ '..n..'\n'
 local f = '✧ : *عدد البوتات المرفوعه* ↫ '..t..'\n✧ : *ملاحضه علامة الـ*✯ *تعني ان البوت ادمن في هذه المجموعه*'
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text..a..f, 1, 'md')
 end
@@ -9039,7 +9039,7 @@ if DevSOFI:get(athalos..'SOFI:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتو
 if DevSOFI:get(athalos..'SOFI:Lock:Farsi'..msg.chat_id_) then lock_farsi = 'مقفله' else lock_farsi = 'مفتوحه' end
 local Flood_Num = DevSOFI:hget(athalos.."SOFI:Spam:Group:User"..msg.chat_id_,"Num:Spam") or 5
 --     Source athalos     --
-local TXTE = "✧ : اعدادات المجموعه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+local TXTE = "✧ : اعدادات المجموعه ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 .."✧ : الروابط ↫ "..mute_links.."\n"
 .."✧ : المعرف ↫ "..lock_tag.."\n"
 .."✧ : البوتات ↫ "..lock_bots.."\n"
@@ -9072,7 +9072,7 @@ local TXTE = "✧ : اعدادات المجموعه ↫ ⤈\n┉ ┉ ┉ ┉ ┉
 .."✧ : التكرار ↫ "..flood.."\n"
 .."✧ : عدد التكرار ↫ "..Flood_Num.."\n"
 .."✧ : عدد السبام ↫ "..spam_c.."\n"
-.."┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : [Source Channel](https://t.me/Tl_300)\n"
+.."✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : [Source Channel](https://t.me/Tl_300)\n"
 Dev_SOFI(msg.chat_id_, msg.id_, 1, TXTE, 1, 'md')
 end
 end
@@ -9152,7 +9152,7 @@ return false
 end 
 UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(text)) 
 Zrf = JSON.decode(UrlZrf) 
-t = "✧ : قائمة الزخرفه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+t = "✧ : قائمة الزخرفه ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 i = 0
 for k,v in pairs(Zrf.ok) do
 i = i + 1
@@ -9173,7 +9173,7 @@ if text and text:match("^زخرفه (.*)$") and ChCheck(msg) or text and text:ma
 local TextZrf = text:match("^زخرفه (.*)$") or text:match("^زخرف (.*)$") 
 UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZrf)) 
 Zrf = JSON.decode(UrlZrf) 
-t = "✧ : قائمة الزخرفه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+t = "✧ : قائمة الزخرفه ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 i = 0
 for k,v in pairs(Zrf.ok) do
 i = i + 1
@@ -9806,7 +9806,7 @@ if text and text:match("^معلومات المجموعه$") and ChCheck(msg) or 
 local Muted = DevSOFI:scard(athalos.."SOFI:Muted:"..msg.chat_id_) or "0"
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : المجموعه ↫ ❨ '..dp.title_..' ❩\n✧ : الايدي ↫ ❨ '..msg.chat_id_..' ❩\n✧ : عدد الاعضاء ↫ ❨ *'..data.member_count_..'* ❩\n✧ : عدد الادمنيه ↫ ❨ *'..data.administrator_count_..'* ❩\n✧ : عدد المطرودين ↫ ❨ *'..data.kicked_count_..'* ❩\n✧ : عدد المكتومين ↫ ❨ *'..Muted..'* ❩\n✧ : عدد رسائل المجموعه ↫ ❨ *'..(msg.id_/2097152/0.5)..'* ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : المجموعه ↫ ❨ '..dp.title_..' ❩\n✧ : الايدي ↫ ❨ '..msg.chat_id_..' ❩\n✧ : عدد الاعضاء ↫ ❨ *'..data.member_count_..'* ❩\n✧ : عدد الادمنيه ↫ ❨ *'..data.administrator_count_..'* ❩\n✧ : عدد المطرودين ↫ ❨ *'..data.kicked_count_..'* ❩\n✧ : عدد المكتومين ↫ ❨ *'..Muted..'* ❩\n✧ : عدد رسائل المجموعه ↫ ❨ *'..(msg.id_/2097152/0.5)..'* ❩\n✧⚍⚍⚍⚍⚍⚍⚍✧\n', 1, 'md') 
 end,nil)
 end,nil)
 end
@@ -10086,7 +10086,7 @@ LinkGroup = 'لا يوجد'
 end
 DevSOFI:set(athalos.."SOFI:Groups:Links"..msg.chat_id_,LinkGroup) 
 if not Sudo(msg) then
-SendText(DraGoN,"✧ : تم تفعيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : بواسطة ↫ "..Name.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✧ : رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DraGoN,"✧ : تم تفعيل مجموعه جديده ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : بواسطة ↫ "..Name.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✧ : رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end
 end,nil)
@@ -10124,7 +10124,7 @@ LinkGroup = 'لا يوجد'
 end
 DevSOFI:set(athalos.."SOFI:Groups:Links"..msg.chat_id_,LinkGroup) 
 if not Sudo(msg) then
-SendText(DraGoN,"✧ : تم تعطيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : بواسطة ↫ "..Name.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✧ : رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DraGoN,"✧ : تم تعطيل مجموعه جديده ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : بواسطة ↫ "..Name.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✧ : رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end
 end,nil)
@@ -10158,7 +10158,7 @@ else
 LinkGroup = '✧ : ليست لدي صلاحية الدعوه لهذه المجموعه !'
 end
 if not Sudo(msg) then
-SendText(DraGoN,"✧ : هناك من بحاجه الى مساعده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : الشخص ↫ "..Name.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n"..LinkGroup.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DraGoN,"✧ : هناك من بحاجه الى مساعده ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : الشخص ↫ "..Name.."\n✧ : اسم المجموعه ↫ ["..NameChat.."]\n✧ : ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n"..LinkGroup.."\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : الوقت ↫ "..os.date("%I:%M%p").."\n✧ : التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end,nil)
 end,nil)
@@ -10173,12 +10173,12 @@ if #List == 0 then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : لا توجد مجموعات مفعله', 1, 'md')
 else
 Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : جاري ارسال نسخه تحتوي على ↫ '..#List..' مجموعه', 1, 'md')
-local Text = "✧ : Source athalos\n✧ : File Bot Groups\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+local Text = "✧ : Source athalos\n✧ : File Bot Groups\n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 for k,v in pairs(List) do
 local GroupsManagers = DevSOFI:scard(athalos.."SOFI:Managers:"..v) or 0
 local GroupsAdmins = DevSOFI:scard(athalos.."SOFI:Admins:"..v) or 0
 local Groupslink = DevSOFI:get(athalos.."SOFI:Groups:Links" ..v)
-Text = Text..k.." ↬ ⤈ \n✧ : Group ID ↬ "..v.."\n✧ : Group Link ↬ "..(Groupslink or "Not Found").."\n✧ : Group Managers ↬ "..GroupsManagers.."\n✧ : Group Admins ↬ "..GroupsAdmins.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Text = Text..k.." ↬ ⤈ \n✧ : Group ID ↬ "..v.."\n✧ : Group Link ↬ "..(Groupslink or "Not Found").."\n✧ : Group Managers ↬ "..GroupsManagers.."\n✧ : Group Admins ↬ "..GroupsAdmins.."\n✧⚍⚍⚍⚍⚍⚍⚍✧\n"
 end
 local File = io.open('GroupsBot.txt', 'w')
 File:write(Text)
@@ -10571,7 +10571,7 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : تم الغاء الامر" ,  1, "md"
 DevSOFI:del(athalos..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✧ : يمكنك اضافة الى النص ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : للخروج ارسل ↫ ( الغاء )\n ✓" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✧ : يمكنك اضافة الى النص ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : للخروج ارسل ↫ ( الغاء )\n ✓" ,  1, "md")
 DevSOFI:set(athalos..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SaveGpRed')
 DevSOFI:set(athalos..'SOFI:Add:GpText'..msg.sender_user_id_..msg.chat_id_,text)
 DevSOFI:sadd(athalos..'SOFI:Manager:GpRed'..msg.chat_id_,text)
@@ -10616,7 +10616,7 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : تم الغاء الامر" ,  1, "md"
 DevSOFI:del(athalos..'SOFI:Add:AllRed'..msg.sender_user_id_)
 return false
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✧ : يمكنك اضافة الى النص ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : للخروج ارسل ↫ ( الغاء )\n ✓" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "✧ : ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✧ : يمكنك اضافة الى النص ↫ ⤈\n✧⚍⚍⚍⚍⚍⚍⚍✧\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : للخروج ارسل ↫ ( الغاء )\n ✓" ,  1, "md")
 DevSOFI:set(athalos.."SOFI:Add:AllRed"..msg.sender_user_id_,'SaveAllRed')
 DevSOFI:set(athalos.."SOFI:Add:AllText"..msg.sender_user_id_, text)
 DevSOFI:sadd(athalos.."SOFI:Sudo:AllRed",text)
@@ -10629,7 +10629,7 @@ if not Manager(msg) then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : للمدير واعلى فقط ', 1, 'md')
 else
 local redod = DevSOFI:smembers(athalos..'SOFI:Manager:GpRedod'..msg.chat_id_)
-MsgRep = '✧ : قائمة الردود المتعدده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+MsgRep = '✧ : قائمة الردود المتعدده ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n'
 for k,v in pairs(redod) do
 MsgRep = MsgRep..k..'~ (`'..v..'`) • {*العدد ↫ '..#DevSOFI:smembers(athalos..'SOFI:Text:GpTexts'..v..msg.chat_id_)..'*}\n' 
 end
@@ -10663,7 +10663,7 @@ end
 --     Source athalos     --
 if text == 'الردود' and Manager(msg) and ChCheck(msg) or text == 'ردود المدير' and Manager(msg) and ChCheck(msg) then
 local redod = DevSOFI:smembers(athalos..'SOFI:Manager:GpRed'..msg.chat_id_)
-MsgRep = '✧ : ردود المدير ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+MsgRep = '✧ : ردود المدير ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n'
 for k,v in pairs(redod) do
 if DevSOFI:get(athalos.."SOFI:Gif:GpRed"..v..msg.chat_id_) then
 dp = 'متحركه 🎭'
@@ -10720,7 +10720,7 @@ end
 --     Source athalos     --
 if  text == "ردود المطور" and SecondSudo(msg) or text == "الردود العام" and SecondSudo(msg) or text == "ردود العام" and SecondSudo(msg) or text == "↫ الردود العام ✧" and SecondSudo(msg) then
 local redod = DevSOFI:smembers(athalos.."SOFI:Sudo:AllRed")
-MsgRep = '✧ : ردود المطور ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+MsgRep = '✧ : ردود المطور ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n'
 for k,v in pairs(redod) do
 if DevSOFI:get(athalos.."SOFI:Gif:AllRed"..v) then
 dp = 'متحركه 🎭'
@@ -10818,14 +10818,14 @@ if text == "الاوامر" and ChCheck(msg) or text == "اوامر" and ChCheck
 local Help = DevSOFI:get(athalos..'SOFI:Help')
 local Text = [[
 ✧ : اهلا بك في قائمة الاوامر ↫ ⤈ 
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : م1 ↫ اوامر الحمايه
 ✧ : م2 ↫ اوامر الادمنيه
 ✧ : م3 ↫ اوامر المدراء
 ✧ : م4 ↫ اوامر المنشئين
 ✧ : م5 ↫ اوامر المطورين
 ✧ : م6 ↫ اوامر الاعضاء
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]] 
 keyboard = {} 
@@ -10853,7 +10853,7 @@ else
 local Help = DevSOFI:get(athalos..'SOFI:Help1')
 local Text = [[
 ✧ : اوامر حماية المجموعه ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : قفل • فتح ↫ الروابط
 ✧ : قفل • فتح ↫ المعرفات
 ✧ : قفل • فتح ↫ البوتات
@@ -10886,9 +10886,9 @@ local Text = [[
 ✧ : قفل • فتح ↫ الانكليزيه
 ✧ : قفل • فتح ↫ الفارسيه
 ✧ : قفل • فتح ↫ التفليش
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : اوامر حمايه اخرى ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : قفل • فتح + الامر ↫ ⤈
 ✧ : التكرار بالطرد
 ✧ : التكرار بالكتم
@@ -10896,7 +10896,7 @@ local Text = [[
 ✧ : الفارسيه بالطرد
 ✧ : البوتات بالطرد
 ✧ : البوتات بالتقيد
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
@@ -10921,7 +10921,7 @@ else
 local Help = DevSOFI:get(athalos..'SOFI:Help2')
 local Text = [[
 ✧ : اوامر الادمنيه ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : الاعدادت
 ✧ : تاك للكل 
 ✧ : انشاء رابط
@@ -10939,25 +10939,25 @@ local Text = [[
 ✧ : ضع • حذف ↫ قوانين
 ✧ : اضف • حذف ↫ صلاحيه
 ✧ : الصلاحيات • حذف الصلاحيات
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : ضع سبام + العدد
 ✧ : ضع تكرار + العدد
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : رفع مميز • تنزيل مميز
 ✧ : المميزين • حذف المميزين
 ✧ : كشف القيود • رفع القيود
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : حذف • مسح + بالرد
 ✧ : منع • الغاء منع
 ✧ : قائمه المنع
 ✧ : حذف قائمه المنع
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تفعيل • تعطيل ↫ الرابط
 ✧ : تفعيل • تعطيل ↫ الالعاب
 ✧ : تفعيل • تعطيل ↫ الترحيب
 ✧ : تفعيل • تعطيل ↫ التاك للكل
 ✧ : تفعيل • تعطيل ↫ كشف الاعدادات
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : طرد المحذوفين
 ✧ : طرد ↫ بالرد • بالمعرف • بالايدي
 ✧ : كتم • الغاء كتم
@@ -10966,12 +10966,12 @@ local Text = [[
 ✧ : المكتومين • حذف المكتومين
 ✧ : المقيدين • حذف المقيدين
 ✧ : المحظورين • حذف المحظورين
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تقييد دقيقه + عدد الدقائق
 ✧ : تقييد ساعه + عدد الساعات
 ✧ : تقييد يوم + عدد الايام
 ✧ : الغاء تقييد ↫ لالغاء التقييد بالوقت
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
@@ -10996,7 +10996,7 @@ else
 local Help = DevSOFI:get(athalos..'SOFI:Help3')
 local Text = [[
 ✧ : اوامر المدراء ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : فحص البوت
 ✧ : ضع اسم + الاسم
 ✧ : اضف • حذف ↫ رد
@@ -11010,33 +11010,33 @@ local Text = [[
 ✧ : منع ↫ بالرد على ( ملصق • صوره • متحركه )
 ✧ : حذف قائمه منع + ↫ ⤈
 ( الصور • المتحركات • الملصقات )
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تنزيل الكل
 ✧ : رفع ادمن • تنزيل ادمن
 ✧ : الادمنيه • حذف الادمنيه
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تثبيت
 ✧ : الغاء التثبيت
 ✧ : اعاده التثبيت
 ✧ : الغاء تثبيت الكل
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تغير رد + اسم الرتبه + النص ↫ ⤈
 ✧ : المطور • منشئ الاساسي
 ✧ : المنشئ • المدير • الادمن
 ✧ : المميز • المنظف • العضو
 ✧ : حذف ردود الرتب
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تغيير الايدي ↫ لتغيير الكليشه
 ✧ : تعيين الايدي ↫ لتعيين الكليشه
 ✧ : حذف الايدي ↫ لحذف الكليشه
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تفعيل • تعطيل + الامر ↫ ⤈
 ✧ : اطردني • الايدي بالصوره • الابراج
 ✧ : معاني الاسماء • اوامر النسب • انطق
 ✧ : الايدي • تحويل الصيغ • اوامر التحشيش
 ✧ : ردود المدير • ردود المطور • التحقق
 ✧ : ضافني • حساب العمر • الزخرفه
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
@@ -11061,7 +11061,7 @@ else
 local Help = DevSOFI:get(athalos..'SOFI:Help4')
 local Text = [[
 ✧ : اوامر المنشئين ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تنزيل الكل
 ✧ : الميديا • امسح
 ✧ : تعين عدد الحذف
@@ -11078,9 +11078,9 @@ local Text = [[
 ✧ : تفعيل • تعطيل + الامر ↫ ⤈
 ✧ : نزلني • امسح
 ✧ : الحظر • الكتم
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : اوامر المنشئين الاساسيين ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : وضع لقب + اللقب
 ✧ : تفعيل • تعطيل ↫ الرفع
 ✧ : رفع منشئ • تنزيل منشئ
@@ -11088,14 +11088,14 @@ local Text = [[
 ✧ : رفع • تنزيل ↫ مشرف
 ✧ : رفع بكل الصلاحيات
 ✧ : حذف القوائم
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : اوامر المالكين ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : رفع • تنزيل ↫ منشئ اساسي
 ✧ : حذف المنشئين الاساسيين 
 ✧ : المنشئين الاساسيين 
 ✧ : حذف جميع الرتب
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
@@ -11120,7 +11120,7 @@ else
 local Help = DevSOFI:get(athalos..'SOFI:Help5')
 local Text = [[
 ✧ : اوامر المطورين ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : الكروبات
 ✧ : المطورين
 ✧ : المشتركين
@@ -11131,16 +11131,16 @@ local Text = [[
 ✧ : كشف + -ايدي المجموعه
 ✧ : رفع مالك • تنزيل مالك
 ✧ : المالكين • حذف المالكين
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : رفع • تنزيل ↫ مدير عام
 ✧ : حذف • المدراء العامين 
 ✧ : رفع • تنزيل ↫ ادمن عام
 ✧ : حذف • الادمنيه العامين 
 ✧ : رفع • تنزيل ↫ مميز عام
 ✧ : حذف • المميزين عام 
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : اوامر المطور الاساسي ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تحديث
 ✧ : السيرفر
 ✧ : روابط الكروبات
@@ -11172,14 +11172,14 @@ local Text = [[
 ✧ : الثانويين • حذف الثانويين
 ✧ : تعيين • حذف ↫ كليشة الايدي
 ✧ : اذاعه للكل بالتوجيه ↫ بالرد
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : تفعيل ملف + اسم الملف
 ✧ : تعطيل ملف + اسم الملف
 ✧ : تفعيل • تعطيل + الامر ↫ ⤈
 ✧ : الاذاعه • الاشتراك الاجباري
 ✧ : ترحيب البوت • المغادره
 ✧ : البوت الخدمي • التواصل
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
@@ -11201,7 +11201,7 @@ if text == "م٦" and ChCheck(msg) or text == "م6" and ChCheck(msg) or text == 
 local Help = DevSOFI:get(athalos..'SOFI:Help6')
 local Text = [[
 ✧ : اوامر الاعضاء ↫ ⤈
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : السورس • موقعي • رتبتي • معلوماتي 
 ✧ : رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
 ✧ : رسائلي • حذف رسائلي • اسمي • معرفي 
@@ -11212,7 +11212,7 @@ local Text = [[
 ✧ : ايدي المجموعه • معلومات المجموعه 
 ✧ : نسبه الحب • نسبه الكره • نسبه الغباء 
 ✧ : نسبه الرجوله • نسبه الانوثه • التفاعل
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : لقبه + بالرد
 ✧ : كول + الكلمه
 ✧ : زخرفه + اسمك
@@ -11225,7 +11225,7 @@ local Text = [[
 ✧ : ايدي • كشف  ↫ بالرد • بالمعرف • بالايدي
 ✧ : تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
 ✧ : انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+✧⚍⚍⚍⚍⚍⚍⚍✧
 ✧ : [Source Channel](https://t.me/Tl_300)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
@@ -11412,7 +11412,7 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : للمطور الاساسي فقط ', 
 else
 local chtext = DevSOFI:get(athalos.."SOFI:ChText")
 if chtext then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : كليشة الاشتراك ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..chtext..']', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '✧ : كليشة الاشتراك ↫ ⤈ \n✧⚍⚍⚍⚍⚍⚍⚍✧\n['..chtext..']', 1, 'md')
 else
 if DevSOFI:get(athalos.."SOFI:ChId") then
 local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChat?chat_id='..DevSOFI:get(athalos.."SOFI:ChId"))
@@ -11468,11 +11468,11 @@ HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 Percentage=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 UpTime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes"}'`
 echo '✧ : نظام التشغيل ↫ ⤈\n`'"$LinuxVersion"'`' 
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : الذاكره العشوائيه ↫ ⤈\n`'"$MemoryUsage"'`'
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : وحدة التخزين ↫ ⤈\n`'"$HardDisk"'`'
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : المعالج ↫ ⤈\n`'"`grep -c processor /proc/cpuinfo`""Core ~ {$Percentage%} "'`'
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : الدخول ↫ ⤈\n`'`whoami`'`'
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : مدة تشغيل السيرفر ↫ ⤈\n`'"$UpTime"'`'
+echo '✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : الذاكره العشوائيه ↫ ⤈\n`'"$MemoryUsage"'`'
+echo '✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : وحدة التخزين ↫ ⤈\n`'"$HardDisk"'`'
+echo '✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : المعالج ↫ ⤈\n`'"`grep -c processor /proc/cpuinfo`""Core ~ {$Percentage%} "'`'
+echo '✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : الدخول ↫ ⤈\n`'`whoami`'`'
+echo '✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : مدة تشغيل السيرفر ↫ ⤈\n`'"$UpTime"'`'
 ]]):read('*a'), 1, 'md')
 end
 end
@@ -11496,10 +11496,10 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,
 local SOFIname = '✧ : العضو ↫ ['..dp.first_name_..'](tg://user?id='..dp.id_..')'
 local SOFIid = '✧ : ايديه ↫ `'..dp.id_..'`'
 local SOFItext = '✧ : قام بالتعديل على '..Media
-local SOFItxt = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✧ : تعالو يامشرفين اكو مخرب'
+local SOFItxt = '✧⚍⚍⚍⚍⚍⚍⚍✧\n✧ : تعالو يامشرفين اكو مخرب'
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,SOFI) 
 local admins = SOFI.members_  
-text = '\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+text = '\n✧⚍⚍⚍⚍⚍⚍⚍✧\n'
 for i=0 , #admins do 
 if not SOFI.members_[i].bot_info_ then
 tdcli_function ({ID = "GetUser",user_id_ = admins[i].user_id_},function(arg,data) 
